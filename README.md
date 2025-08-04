@@ -2,13 +2,13 @@
 The B is for Business
 
 BOBODDY
-B: Business
-O: Optimization
-B: By
-O: Organizational
-D: Development
-D: Dynamics
-Y: Yes!
+- B: Business
+- O: Optimization
+- B: By
+- O: Organizational
+- D: Development
+- D: Dynamics
+- Y: Yes!
 
 
 ## ⚙️Core Features
