@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 BOBODDY Brainstorm Engine 🧠</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="whiteboard">
+        <header class="header">
+            <h1>🧠 BOBODDY Brainstorm Engine 🧠</h1>
+            <p class="subtitle">The B is for Business</p>
+        </header>
+
+        <div class="main-content">
+            <div class="acronym-section">
+                <div class="acronym-display" id="acronym-display">
+                    <span class="acronym-letters" id="acronym-letters">BOBODDY</span>
+                </div>
+                
+                <div class="controls">
+                    <button id="generate-btn" class="btn btn-primary">Generate New Acronym</button>
+                    <div class="mode-selector">
+                        <label>Mode:</label>
+                        <select id="mode-select">
+                            <option value="manual">Manual Entry</option>
+                            <option value="corporate">Corporate Jargon</option>
+                            <option value="creed">Creed Mode</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="definitions-section">
+                <div class="definitions-grid" id="definitions-grid">
+                    <!-- Definitions will be populated by JavaScript -->
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="fill-definitions-btn" class="btn btn-secondary">Fill All Definitions</button>
+                    <button id="clear-definitions-btn" class="btn btn-tertiary">Clear All</button>
+                </div>
+            </div>
+
+            <div class="creed-section">
+                <div class="creed-gif">
+                    <img src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" 
+                         alt="Creed Bratton GIF" 
+                         id="creed-gif"
+                         style="display: none;">
+                </div>
+                <div class="creed-quote" id="creed-quote" style="display: none;">
+                    "Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name? Creed Bratton."
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>💡 Pro Tip: Try Creed Mode for maximum chaos! 💡</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
